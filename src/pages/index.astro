@@ -1,9 +1,41 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import SocialPill from "../components/SocialPill.astro";
+// icons
+import LinkedInIcon from "../components/icons/LinkdIn.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import Mail from "../components/icons/Mail.astro";
 ---
 
-<Layout title="Portafolio Web">
+<Layout title="Portafolio Web" description="Contrata a rody huancas para crear tu aplicación web. Desarrollador con más de un año de experiencia. Epecializado en crear aplicaciones web escalables.">
   <main>
-    <h1>Portfolio</h1>
+    <section class="w-full lg:w-[740px] mx-auto py-44">
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+        Hola, soy Rody Huancas
+        <a href="https://www.linkedin.com/in/rody-huancas/"target="_blank"rel="noopener"class="flex justify-center items-center" >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
+      <h2 class="text-2xl opacity-80 text-wrap">
+        <span class="font-medium text-pink-100">+1 año de experiencia.</span> Desarrollador Web.
+        De Chiclayo, Perú. Especializado en desarrollo de aplicaciones web.
+      </h2>
+
+      <nav class="flex gap-x-5 mt-8">
+        <SocialPill href="https://www.linkedin.com/in/rody-huancas/">
+          <LinkedInIcon class="size-5" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://www.github.com/rody-huancas/">
+          <GitHubIcon class="size-5" />
+          GitHub
+        </SocialPill>
+        <SocialPill href="mailto:rodyhuancas@gmail.com">
+          <Mail class="size-5" />
+          rodyhuancas@gmail.com
+        </SocialPill>
+      </nav>
+    </section>
   </main>
 </Layout>
