@@ -3,10 +3,10 @@ import ExperienceItem from "./ExperienceItem.astro";
 
 const EXPERIENCE = [
   {
-    date: "Febrero 2022",
+    date: "Actualmente...",
     title: "Desarrollo de código UI de aplicación en Tailwind CSS",
     description: "Acceso a más de 20 páginas, incluyendo un diseño de panel, gráficos, tablero Kanban, calendario y páginas pre-pedido de comercio electrónico y marketing.",
-    link: ""
+    link: "https://github.com/rody-huancas/astro-portfolio-dev"
   },
   {
     date: "Mayo 2023",
@@ -19,23 +19,11 @@ const EXPERIENCE = [
     title: "Personalización de Tailwind CSS o desarrollo de plugins",
     description: "Personalización de la funcionalidad por defecto de Tailwind CSS mediante la creación de un plugin personalizado para selectores de fecha avanzados. Este plugin se integra perfectamente con las clases de utilidad de Tailwind, mejorando la interactividad de la interfaz de usuario.",
     link: ""
-  },
-  {
-    date: "Noviembre 2023",
-    title: "Tailwind CSS para un proyecto de comercio electrónico",
-    description: "Diseño y construcción de la interfaz de usuario para un sitio web de comercio electrónico utilizando Tailwind CSS. Las clases de utilidad de Tailwind demostraron ser eficientes en la creación de listados de productos, carritos de compra y páginas de pago, asegurando una experiencia de usuario fluida para las compras en línea.",
-    link: ""
-  },
-  {
-    date: "Febrero 2024",
-    title: "Integración de Tailwind CSS con React",
-    description: "Integración exitosa de Tailwind CSS con una aplicación React. Esto implicó la configuración de Tailwind dentro del proyecto React y la utilización de las clases de utilidad de Tailwind dentro de los componentes React, permitiendo una mezcla perfecta de arquitectura basada en componentes y estilo de utilidad primero.",
-    link: ""
-  },
+  }
 ];
 ---
 
-<ol class="relative border-s border-gray-200 dark:border-gray-700">
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">
   {
     EXPERIENCE.map(experience => (
       <li class="mb-10 ms-4">
